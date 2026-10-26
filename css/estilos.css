@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Chilanka";
+    src: url(../font/Chilanka-Regular.ttf);
+}
+
+body {
+    font-family: Chilanka;
+    background-color: #0e9dfdde;
+}
+
+header {
+    background-color: #ffffff  ;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logotipo {
+    width: 80px;
+}
+a#links{
+    font-size: 1.7rem;
+    padding-right: 25px;
+}
+h1#Perfil {
+    color: rgb(244, 17, 17);
+}
+
+p#parrafo {
+    color: black;
+    text-align: center;
+}
+
+#quien {
+    min-height: 100vh;       /* Hace que la sección ocupe toda la altura de la pantalla inicial */
+    margin-top: 80px;        /* Espaciado superior más grande (separado del menú fijo) */
+    display: flex;
+    align-items: center;     /* Centra verticalmente el contenido de la sección */
+    padding: 0 !important;   /* Elimina cualquier padding extra para que toque los bordes */
+}
+
+#me {
+    width: 100%;
+    height: 85vh;            /* Define la altura de la imagen en relación a la pantalla */
+    object-fit: cover;       /* Evita que la foto se deforme al ajustarse al alto */
+}
+
+.btn{
+    background-color: #930000;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+footer{
+    background-color: #000000;
+}

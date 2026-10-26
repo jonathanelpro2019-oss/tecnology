@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Datos META  -->
+    <meta name="author" content="Jonathan Alejandro Romero Chacón">
+    <meta name="description" content="Portafolio personal de Jonathan Alejandro Romero Chacón - Entornos Virtuales y Negocios Digitales">
+    <meta name="keywords" content="Jonathan Romero, Portafolio, Entornos Virtuales, Negocios Digitales, Modelado 3D, UI/UX, Bootstrap">
+    <title>Portafolio |  Página deJonathan Romero</title>
+    
+    <!-- Icono de pestaña -->
+    <link rel="shortcut icon" href="iconos/favicon-32x32.png" type="image/x-icon">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Framework Bootstrap y CSS local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark py-2 fixed-top">
+        <nav class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html#Inicio">
+                <img src="iconos/favicon-32x32.png" alt="Logo" class="logotipo">
+                <span class="fw-bold">Jonathan Romero</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" href="#Inicio">Inicio</a>
+                    <a class="nav-link" href="#Acerca">Acerca De Mí</a>
+                    <a class="nav-link" href="#Proyectos">Proyectos</a>
+                    <a class="nav-link" href="#Multimedia">Multimedia</a>
+                    <a class="nav-link btn btn-outline-light ms-lg-3 px-3 mt-2 mt-lg-0" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-5 mt-3">
+        <!-- Requisito 2a: SECCIÓN 1 - Inicio / Bienvenida (Componente Bootstrap: Collapse) -->
+        <section id="Inicio" class="container-fluid px-0 py-5">
+            <div class="row align-items-center g-0">
+                <figure class="col-lg-6 col-md-10 offset-md-1 offset-lg-0 mb-0 text-center">
+                    <img id="me" src="imagenes/p010.jpeg" alt="Jonathan Alejandro Romero Chacón" class="img-fluid rounded border-primary" style="max-height: 450px; object-fit: cover;">
+                </figure>
+                <article id="Acerca" class="col-lg-6 col-md-10 offset-md-1 offset-lg-0 text-center text-lg-start px-4 mt-4 mt-lg-0">
+                    <h1 id="Perfil" class="display-5 fw-bold mb-3 titulo-principal">¡Hola! Soy Jonathan Romero</h1>
+                    <p class="fs-4 text-muted mb-2">Desarrollador & Diseñador Digital</p>
+                    <p id="parrafo" class="collapse d-lg-block fs-5 mb-3 text-justify">
+                        Estudiante de la carrera de Entornos Virtuales y Negocios Digitales. Me especializo en diseño de interfaces (UI/UX) con Figma, modelado y renderizado 3D en Blender, desarrollo de software y administración de bases de datos.
+                    </p>
+                    <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+                        <!-- Componente 1: Collapse -->
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#parrafo" role="button" aria-expanded="false" aria-controls="parrafo">
+                            <i class="bi bi-info-circle me-1"></i> ¡Cuéntame más!
+                        </a>
+                        <!-- Componente 2: Modal Trigger -->
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modalPerfil">
+                            <i class="bi bi-person-badge me-1"></i> Ver Perfil Rápido
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Requisito 2a: SECCIÓN 2 - Proyectos (Componente Bootstrap: Cards) -->
+        <section id="Proyectos" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="display-6 fw-bold text-center mb-4 titulo-secundario">Gustos personales y Datos </h2>
+                <div class="row">
+                    <!-- Imagen 1 -->
+                    <article class="col-12 col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="imagenes/Jona loquito.jpeg" class="card-img-top img-fluid w-100" style="height: 220px; object-fit: cover;" alt="Prototipado UI/UX">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Gracioso</h5>
+                                <p class="card-text">Soy muy gracioso y me gusta hacer reír a los demás.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Imagen 2 -->
+                    <article class="col-12 col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="imagenes/p018.jpeg" class="card-img-top img-fluid w-100" style="height: 220px; object-fit: cover;" alt="Modelado 3D">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Personalidad</h5>
+                                <p class="card-text">Soy una persona muy amable, extrovertida y empática, me gusta ayudar a los demás y hacerlos reír.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Imagen 3 -->
+                    <article class="col-12 col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="imagenes/W01.jpeg" class="card-img-top img-fluid w-100" style="height: 220px; object-fit: cover;" alt="Edición Digital">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Amante de los perros</h5>
+                                <p class="card-text">Me encantan los perros, son leales y cariñosos compañeros.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Imagen 4 -->
+                    <article class="col-12 col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="imagenes/JOKER.jpg" class="card-img-top img-fluid w-100" style="height: 220px; object-fit: cover;" alt="Desarrollo Web">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Villano favorito</h5>
+                                <p class="card-text">Mi villano favorito es el Joker, me gusta su personalidad compleja y su enfoque en el caos.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Imagen 5 -->
+                    <article class="col-12 col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="imagenes/f014.jpg" class="card-img-top img-fluid w-100" style="height: 220px; object-fit: cover;" alt="Bases de Datos">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Amante del Rock</h5>
+                                <p class="card-text">Me considero una persona demasiado fanática por el rock, es mi género musical preferido</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Imagen 6 -->
+                    <article class="col-12 col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="imagenes/NEYMAR JR.jpg" class="card-img-top img-fluid w-100" style="height: 220px; object-fit: cover;" alt="Redes Cisco">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Jugador favorito</h5>
+                                <p class="card-text">Mi jugador favorito es Neymar Jr., me gusta su habilidad y estilo de juego.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requisito 2a & 4: SECCIÓN 3 - Multimedia (Video, Audio) -->
+        <section id="Multimedia" class="py-5 container">
+            <h2 class="display-6 fw-bold text-center mb-4 titulo-secundario">Galería Multimedia</h2>
+            
+            <div class="row g-4 align-items-center">
+                <!-- Componente 3: Carousel de Imágenes -->
+                <div class="col-lg-6">
+                    <h4 class="mb-3"><i class="bi bi-images me-2"></i>Galería Destacada</h4>
+                    <div id="carouselPortafolio" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselPortafolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselPortafolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselPortafolio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes/Figma Joker.jpeg" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Slide 1">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                    <h5>Prototipado de Apps</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/FIGMA METALCOST.jpeg.png" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Slide 2">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                    <h5>Renders 3D</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/f3.png" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Slide 3">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                    <h5>Diseño Vectorial</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortafolio" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPortafolio" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6">
+                    <div class="mb-4">
+                        <h4 class="mb-3"><i class="bi bi-camera-reels me-2"></i>Proyecto en Video</h4>
+                        <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+                           
+                            <video controls poster="imagenes/p013.jpeg">
+                                <source src="multimedia/video.mp4" type="video/mp4">
+                                
+                            </video>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="mb-2"><i class="bi bi-music-note-beaming me-2"></i>Spot de Audio / Muestra Sonora</h4>
+                        <p class="text-muted small mb-2">Demostración de proyecto de audio o spot radial:</p>
+                        
+                        <audio controls class="w-100">
+                            <source src="Pantera rosa.mp3" type="audio/mpeg">
+                            
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Componente Modal de Bootstrap -->
+    <div class="modal fade" id="modalPerfil" tabindex="-1" aria-labelledby="modalPerfilLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title fw-bold" id="modalPerfilLabel"><i class="bi bi-person-circle me-2"></i>Resumen Profesional</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Nombre:</strong> Jonathan Alejandro Romero Chacón</li>
+                        <li class="list-group-item"><strong>Carrera:</strong> Entornos Virtuales y Negocios Digitales</li>
+                        <li class="list-group-item"><strong>Ubicación:</strong> León, Guanajuato, México</li>
+                        <li class="list-group-item"><strong>Habilidades:</strong> Figma, Blender, HTML5/CSS3/JS, Java, MySQL</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="d-flex justify-content-center gap-3 mb-3 fs-4">
+                <a href="https://github.com" target="_blank" class="text-white"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/jona-chacón-747011447" target="_blank" class="text-white"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto://jonathanelpro2019@gmail.com" class="text-white"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2026 Jonathan Alejandro Romero Chacón - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
